@@ -49,7 +49,9 @@ subpower=filter(full_power,
 # First statement sets "device" to print graph/output to.
 png(filename="plot2.png",width=480,height=480,units="px",type="cairo-png")
 
-# Plot xy line plot
+# Plot xy line plot. We don't have any nice series or observation numbers (and can't use zoo, xts etc.) 
+# E.g. Days and Times repeast right? 
+# So instead use the ordered sequence. Omit x-axis which we'll manually define.
 plot(x=seq(1:2880),y=subpower$Global_active_power,type="l",
      ylab="Global Active Power (kilowatts)",xlab="",xaxt="n")
 

@@ -51,12 +51,13 @@ png(filename="plot3.png",width=480,height=480,units="px",type="cairo-png")
 
 # Plot xy line plot
 plot(x=seq(1:2880),y=subpower$Sub_metering_1,type="l",
-     ylab="Global Active Power (kilowatts)",xlab="",xaxt="n")
+     ylab="Energy sub metering",xlab="",xaxt="n")
 
 lines(seq(1,2880),subpower$Sub_metering_2,col="red")
 
 lines(seq(1,2880),subpower$Sub_metering_3,col="blue")
 # Manually define x-axis.
 axis(side=1,labels=c("Thu","Fri","Sat"),at=c(1,1440,2880))
+
 
 dev.off()

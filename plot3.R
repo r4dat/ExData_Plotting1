@@ -58,6 +58,14 @@ lines(seq(1,2880),subpower$Sub_metering_2,col="red")
 lines(seq(1,2880),subpower$Sub_metering_3,col="blue")
 # Manually define x-axis.
 axis(side=1,labels=c("Thu","Fri","Sat"),at=c(1,1440,2880))
+# Legend Parameters
+legend(
+    "topright",
+    c("sub_metering_1","sub_metering_2","sub_metering_3"),
+    lty=c(1,1,1),
+    lwd=c(2,2,2),
+    col=c("black","red","blue")
+)
 
 
 dev.off()

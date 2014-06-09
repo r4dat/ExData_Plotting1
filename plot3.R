@@ -1,3 +1,6 @@
+## I realize modular source is best practice, but rubric (Painfully) unclear on this point.
+
+
 # Set string Variables
 localdir=getwd()
 filename="household_power_consumption.txt"

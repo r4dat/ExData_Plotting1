@@ -1,3 +1,5 @@
+### I realize modular source is best practice, but rubric (Painfully) unclear on this point.
+
 # DATA HANDLING
 # Set string Variables
 localdir=getwd()

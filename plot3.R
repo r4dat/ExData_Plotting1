@@ -53,6 +53,8 @@ subpower=filter(full_power,
 png(filename="plot3.png",width=480,height=480,units="px",type="cairo-png")
 
 # Plot xy line plot
+## -- If I'd used DateTime like a
+# sane man I wouldn't have to manually define axis and seq.
 plot(x=seq(1:2880),y=subpower$Sub_metering_1,type="l",
      ylab="Energy sub metering",xlab="",xaxt="n")
 

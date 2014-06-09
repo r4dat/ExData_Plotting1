@@ -51,7 +51,8 @@ subpower=filter(full_power,
 # First statement sets "device" to print graph/output to.
 png(filename="plot2.png",width=480,height=480,units="px",type="cairo-png")
 
-# Plot xy line plot
+# Plot xy line plot -- If I'd used DateTime like a
+# sane man I wouldn't have to manually define axis and seq.
 plot(x=seq(1:2880),y=subpower$Global_active_power,type="l",
      ylab="Global Active Power (kilowatts)",xlab="",xaxt="n")
 
